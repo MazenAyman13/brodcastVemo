@@ -138,8 +138,8 @@ client.on("message", async message => {
             .setColor("RANDOM")
             .setAuthor(message.author.username, message.author.displayAvatarURL)
             .setThumbnail(message.author.avatarURL)
-            .setTitle("**Click Here To Invite The Bot To Your Server :sparkling_heart:**")
-            .setURL(`https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&scope=bot&permissions=8`);
+            .setTitle("**إضـغـط لإضـافـة الـبـوت لـسـرفـرك :sparkling_heart:**")
+            .setURL(`https://discordapp.com/api/oauth2/authorize?client_id=552596488086224916&permissions=0&scope=bot`);
             message.channel.sendEmbed(invite);
     }
 });
@@ -148,7 +148,7 @@ client.on("message", async message => {
         let help = new Discord.RichEmbed()
             .setColor("RANDOM")
             .setThumbnail(message.author.avatarURL)
-            .setDescription(`**__برودكاست بوت | Version 1.1__ 
+            .setDescription(`**[Bc Republic]**
 
             برودكاست عادي : ${prefix}bc
             دعوة البوت لسيرفرك : ${prefix}invite
